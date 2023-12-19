@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		62C9369A2B30BF75005954BB /* TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C936992B30BF75005954BB /* TimerApp.swift */; };
-		62C9369C2B30BF75005954BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C9369B2B30BF75005954BB /* ContentView.swift */; };
 		62C9369E2B30BF77005954BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C9369D2B30BF77005954BB /* Assets.xcassets */; };
 		62C936A12B30BF77005954BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C936A02B30BF77005954BB /* Preview Assets.xcassets */; };
+		62E42B1C2B30C3380009AA7A /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E42B1B2B30C3380009AA7A /* UserManager.swift */; };
+		62E42B1E2B30C74A0009AA7A /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E42B1D2B30C74A0009AA7A /* StarterView.swift */; };
+		62E42B202B30C8100009AA7A /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E42B1F2B30C8100009AA7A /* TimerView.swift */; };
+		62E42B222B30C8250009AA7A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E42B212B30C8250009AA7A /* RegisterView.swift */; };
+		62E42B262B30D37C0009AA7A /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E42B252B30D37C0009AA7A /* TimeCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62C936962B30BF75005954BB /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C936992B30BF75005954BB /* TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerApp.swift; sourceTree = "<group>"; };
-		62C9369B2B30BF75005954BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		62C9369D2B30BF77005954BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62C936A02B30BF77005954BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62E42B1B2B30C3380009AA7A /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		62E42B1D2B30C74A0009AA7A /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		62E42B1F2B30C8100009AA7A /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		62E42B212B30C8250009AA7A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		62E42B252B30D37C0009AA7A /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		62C936982B30BF75005954BB /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				62C936992B30BF75005954BB /* TimerApp.swift */,
-				62C9369B2B30BF75005954BB /* ContentView.swift */,
+				62C936A72B30BFA4005954BB /* Application */,
+				62C936A82B30BFB3005954BB /* Views */,
+				62C936A92B30BFF2005954BB /* ObservableObject */,
 				62C9369D2B30BF77005954BB /* Assets.xcassets */,
 				62C9369F2B30BF77005954BB /* Preview Content */,
 			);
@@ -65,6 +74,33 @@
 				62C936A02B30BF77005954BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62C936A72B30BFA4005954BB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				62C936992B30BF75005954BB /* TimerApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		62C936A82B30BFB3005954BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62E42B1D2B30C74A0009AA7A /* StarterView.swift */,
+				62E42B1F2B30C8100009AA7A /* TimerView.swift */,
+				62E42B212B30C8250009AA7A /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		62C936A92B30BFF2005954BB /* ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				62E42B1B2B30C3380009AA7A /* UserManager.swift */,
+				62E42B252B30D37C0009AA7A /* TimeCounter.swift */,
+			);
+			path = ObservableObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C9369C2B30BF75005954BB /* ContentView.swift in Sources */,
+				62E42B1C2B30C3380009AA7A /* UserManager.swift in Sources */,
+				62E42B222B30C8250009AA7A /* RegisterView.swift in Sources */,
 				62C9369A2B30BF75005954BB /* TimerApp.swift in Sources */,
+				62E42B262B30D37C0009AA7A /* TimeCounter.swift in Sources */,
+				62E42B202B30C8100009AA7A /* TimerView.swift in Sources */,
+				62E42B1E2B30C74A0009AA7A /* StarterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
